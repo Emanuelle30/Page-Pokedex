@@ -1,0 +1,243 @@
+body {
+	background: #EFEFBB;
+	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	color: black;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+}
+
+.card::after {
+	content: "";
+	display: block;
+	width: 50%;
+	height: 45%;
+	border-radius: 100%;
+	opacity: .7;
+	position: absolute;
+	top: 15%;
+	left: 25%;
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background-color: #FDDFDF;
+}
+
+.grass {
+	background-color: #DEFDE0;
+}
+
+.electric {
+	background-color: #FCF7DE;
+}
+
+.water,
+.ice {
+	background-color: #DEF3FD;
+}
+
+.ground {
+	background-color: #f4e7da;
+}
+
+.rock {
+	background-color: #d5d5d4;
+}
+
+.fairy {
+	background-color: #fceaff;
+}
+
+.poison {
+	background-color: #98d7a5;
+}
+
+.bug {
+	background-color: #f8d5a3;
+}
+
+.dragon {
+	background-color: #97b3e6;
+}
+
+.psychic {
+	background-color: #eaeda1;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #E6E0D4;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+ul.social-network {
+	list-style: none;
+	padding: 0;
+}
+
+ul.social-network li {
+	display: inline;
+	margin: 0;
+	padding: 5px;
+}
+
+.fa {
+	font-size: 25pt;
+	color: white;
+	padding: 10px;
+}
+
+.h:hover {
+	color: black;
+
+}
+
+/*style-menu*/
+
+nav {
+	margin: 0;
+	background-color: black;
+	padding: 1px;
+
+}
+
+a {
+	color: rgb(37, 186, 186);
+	padding: 10px 10px;
+	font-size: 1.3rem;
+	letter-spacing: 2px;
+	text-decoration: none;
+	Font-weight: bold
+}
+
+a:hover {
+	color: rgb(230, 20, 136);
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	list-style: none;
+}
+
+li {
+	padding: 0 20px;
+}
+
+li:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+
+
+/* footer */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	background-color: rgb(206, 196, 196);
+	padding: 5em 0;
+}
+
+footer h2, footer p, footer a, footer span {
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+#copy{
+	text-align: center;
+	padding: 2em;
+}
+
+footer li {
+	list-style: none;
+
+}
+
+
+
+
+@keyframes bounce {
+	20% {
+		transform: translateY(-6px);
+	}
+
+	40% {
+		transform: translateY(0px);
+	}
+
+	80% {
+		transform: translateY(-2px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+
+}
