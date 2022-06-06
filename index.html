@@ -10,16 +10,38 @@
 
 <body>
     <!--Menu-->
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html" id="home"> Pokedex </a>
-            </li>
-            <li>
-                <a href="#redes"> Contato </a>
-            </li>
-        </ul>
-    </nav>
+    <div class="row">
+        <div class="col-md-6">
+            <nav>
+            <ul>
+                <li>
+                    <a href="index.html" id="home"> Pokedex </a>
+                </li>
+                <li>
+                    <a href="#redes"> Contato </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+   
+ <div class="row">
+     <div class="col-md-6" id="style-form">
+        
+            <input type="search" id="texto" list="historico" placeholder="Escolha seu Pokemon">
+            <img src="icones/lupas.png">
+            
+            <datalist id="historico">
+            <option value= "1"></option>
+            <option value= "2"></option>
+            <option value= "3"></option>
+            <option value= "4"></option>
+            </datalist>
+          
+     </div>
+ </div>
+
+   
     <!--/Menu-->
 
     <!--Home Pokedex-->

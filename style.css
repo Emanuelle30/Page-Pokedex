@@ -1,4 +1,9 @@
 /* style.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	background: #EFEFBB;
 	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
@@ -193,8 +198,26 @@ li:hover {
 	opacity: 0.8;
 }
 
-/* style footer */
+/* input Pesquisar */
 
+#style-form {
+display: flex;
+justify-content: flex-end;
+cursor: pointer;
+margin-top: 3em;
+}
+
+#texto {
+	width: 350px;
+	height: 50px;
+	float: left;
+	font-size: 20px;
+	border: solid 2px #2f4550;
+	text-align: center;
+}
+
+/* style footer */
+ 
 footer {
 	display: flex;
 	flex-direction: column;
