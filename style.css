@@ -1,7 +1,13 @@
 /* style.css */
 
 html {
+
     scroll-behavior: smooth;
+	transition-delay: 500ms;
+}
+
+:target{
+	scroll-margin-top: .8em;
 }
 
 body {
@@ -199,6 +205,16 @@ li:hover {
 }
 
 /* input Pesquisar */
+
+::placeholder{
+	color: #222;
+}
+
+.i{
+
+	border-radius: 50px;
+	background-color: #26e6f4;
+}
 
 #style-form {
 display: flex;
