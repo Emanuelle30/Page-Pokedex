@@ -1,12 +1,10 @@
 /* style.css */
 
 html {
-
-    scroll-behavior: smooth;
-	transition-delay: 500ms;
+	scroll-behavior: smooth;
 }
 
-:target{
+:target {
 	scroll-margin-top: .8em;
 }
 
@@ -15,6 +13,7 @@ body {
 	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
 	color: black;
 	margin: 0;
+	height: 100vh;
 	font-family: rubik;
 }
 
@@ -206,34 +205,57 @@ li:hover {
 
 /* input Pesquisar */
 
-::placeholder{
-	color: #222;
+.search-box {
+	position: absolute;
+	top: 20%;
+	left: 70%;
+	background: #0b0d0e;
+	height: 40px;
+	padding: 10px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.i{
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	line-height: 40px;
+	width: 0;
+	transition: .4s;
+}
 
+.search-btn {
+	width: 40px;
+	height: 40px;
 	border-radius: 50px;
-	background-color: #26e6f4;
+	background: #0b0d0e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
-#style-form {
-display: flex;
-justify-content: flex-end;
-cursor: pointer;
-margin-top: 3em;
+.search-box:hover>.search-txt {
+
+	width: 220px;
+	padding: 0 6px;
+
 }
 
-#texto {
-	width: 350px;
-	height: 50px;
-	float: left;
-	font-size: 20px;
-	border: solid 2px #2f4550;
-	text-align: center;
+::-webkit-input-placeholder {
+
+	color: rgb(230, 20, 136);
 }
+
 
 /* style footer */
- 
+
 footer {
 	display: flex;
 	flex-direction: column;

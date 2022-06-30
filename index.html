@@ -6,7 +6,7 @@
     <title>PokeDex</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 </head>
 
 <body>
@@ -15,49 +15,38 @@
         <div class="col-md-6">
             <nav>
                 <ul>
-                    <li>
-                        <a href="index.html" id="home"> Pokedex </a>
-                    </li>
-                    <li>
-                        <a href="#redes"> Contato </a>
-                    </li>
+                    <li><a href="index.html" id="home"> Pokedex </a></li>
+                    <li><a href="#redes"> Contato </a></li>
                 </ul>
             </nav>
         </div>
     </div>
     <!--/Menu-->
-
     <!--input-->
-    <div class="input-container">
-        <div class="col-md-6" id="style-form">
-            <input type="search" id="texto" placeholder="Escolha seu Pokemon" class="i">
-            <img src="/icones/lupas.png" alt="lupa">
-        </div>
+    <div class="search-box">
+        <input type="text" class="search-txt" placeholder="Pesquise um Pokemon">
+        <a href="#" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a>
     </div>
     <!--/input-->
-
     <!--Home Pokedex-->
     <div class="container">
         <h1>Pokedex</h1>
         <ul data-js="pokedex" class="pokedex"></ul>
     </div>
     <!--/Home Pokedex-->
-
     <!--rodapé-->
     <footer>
         <div class="footer">
             <div class="copy">
                 <a href="#home" id="redes"> Me siga nas redes sociais </a>
             </div>
-
             <div class="copy">
                 <a href="https://github.com/Emanuelle30" target="_blank">
                     <img class="p-20" src="icones/github.png" alt="Github"></a>
 
                 <a href="https://www.linkedin.com/in/30emanuellecavalcante/" target="_blank">
                     <img class="p-20" src="icones/linkedin.png" alt="LinkedIn"></a>
-
-                <p class="copy"> Todos os direitos reservados: Emanuelle Cavalcante &copy; </p>
+                <p class="copy"> Todos os direitos reservados: Emanuelle Cavalcante &copy;</p>
             </div>
         </div>
     </footer>
